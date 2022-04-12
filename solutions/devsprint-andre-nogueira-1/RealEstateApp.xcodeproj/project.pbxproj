@@ -23,6 +23,7 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
+		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */,
+				B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
+				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,

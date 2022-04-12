@@ -7,9 +7,10 @@
 
 import Foundation
 
-// MARK: - WelcomeElement
-struct WelcomeElement: Codable {
-    let welcomeDescription: String
+// MARK: - Favorites
+struct Favorites: Codable {
+    
+    let description: String
     let usableAreas: Int
     let listingType, createdAt, listingStatus, id: String
     let parkingSpaces: Int
