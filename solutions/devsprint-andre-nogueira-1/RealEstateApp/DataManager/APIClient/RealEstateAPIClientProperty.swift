@@ -40,3 +40,4 @@ public final class RealEstateAPIClientProperty: RealEstateAPIPropertyProtocol {
         task.resume()
     }
 }
+    
