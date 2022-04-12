@@ -8,12 +8,33 @@
 
 import Foundation
 
+enum ResultError: Error {
+    case badURL, noData, invalidJSON
+}
+
 public final class RealEstateAPIClient {
-
-    public func fetchProperties(completion: @escaping ([String]) -> ()) {
-
-        completion(["Apartamento com 3 quartos e 2 banheiros",
-                    "Casa com 2 quartos e 1 banheiro",
-                    "Apartamento com 1 quarto e 1 banheiro"])
+    struct Constants {
+        static let url = URL(string: "https://raw.githubusercontent.com/devpass-tech/challenge-realestate-app/main/api/listings.json")
+    }
+    func fetchProperties(completion: @escaping (Result<[Property], ResultError>) -> Void) {
+        guard let url = Constants.url else {
+            completion(.failure(.badURL))
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200, let data = data else {
+                completion(.failure(.invalidJSON))
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                let result = try decoder.decode([Property].self, from: data)
+                completion(.success(result))
+            } catch {
+                print(error)
+                completion(.failure(.noData))
+            }
+        }
+        task.resume()
     }
 }
