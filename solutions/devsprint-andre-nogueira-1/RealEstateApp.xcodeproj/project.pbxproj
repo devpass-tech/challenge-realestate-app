@@ -25,6 +25,8 @@
 		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
 		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
 		B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA962805F087006177F8 /* TabBarViewController.swift */; };
+		B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */; };
+		B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
 		B0D7AA962805F087006177F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrorRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				980789CD275E943C00CED39A /* FavoritesViewController.swift */,
+				B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				B0EDEDC12807200300B1AB1F /* Enums */,
 				980C0C072704F1C700F8100A /* APIClient */,
 			);
 			path = DataManager;
@@ -242,6 +248,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		B0EDEDC12807200300B1AB1F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,8 +366,10 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
+				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */,
 				984DAACF27EE4EAA002F3E8A /* String+Extensions.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,

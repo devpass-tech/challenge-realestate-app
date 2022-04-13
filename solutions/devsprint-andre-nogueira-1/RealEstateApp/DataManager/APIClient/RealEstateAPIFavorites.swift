@@ -7,21 +7,18 @@
 
 import Foundation
 
-enum ErrorRequest: Error {
-    case url
-    case noResponse
-    case noData
-    case invalidJson
+protocol RealEstateAPIClientFavoritesProtocol: AnyObject {
+    func fetchFavorites(completion: @escaping (Result<[Favorites], ErrorRequest>) -> (Void))
 }
 
-class RealEstateAPIClientFavorites {
+class RealEstateAPIClientFavorites: RealEstateAPIClientFavoritesProtocol {
     
-    public static func fetchFavorites(completion: @escaping (Result<[Favorites], ErrorRequest>) -> (Void)) {
+    func fetchFavorites(completion: @escaping (Result<[Favorites], ErrorRequest>) -> (Void)) {
         
         let urlString = "https://raw.githubusercontent.com/devpass-tech/challenge-realestate-app/main/api/favorites.json"
         
         guard let url = URL(string: urlString) else {
-            completion(.failure(ErrorRequest.url))
+            completion(.failure(ErrorRequest.urlNotValid))
             return
         }
         
