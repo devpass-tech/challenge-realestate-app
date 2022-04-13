@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
+		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -29,6 +31,7 @@
 		B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */; };
 		B0EDEDC6280762E200B1AB1F /* InfoPlistBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */; };
 		B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */; };
+		E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE07EB28076C6C00B2752F /* AccountFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrorRequest.swift; sourceTree = "<group>"; };
 		B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistBaseURL.swift; sourceTree = "<group>"; };
 		B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerGetURL.swift; sourceTree = "<group>"; };
+		E9FE07EB28076C6C00B2752F /* AccountFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				980789D8275EA3C900CED39A /* AccountViewController.swift */,
+				54E204C82804EB8C009FFEDC /* AccountView.swift */,
+				54E204CA28051E0A009FFEDC /* AccountViewModel.swift */,
+				E9FE07EB28076C6C00B2752F /* AccountFactory.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -328,7 +337,7 @@
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "RealEstateApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -389,10 +398,13 @@
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */,
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
 				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
 				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
@@ -429,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -581,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 42QU6XXW6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -608,7 +620,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 42QU6XXW6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
