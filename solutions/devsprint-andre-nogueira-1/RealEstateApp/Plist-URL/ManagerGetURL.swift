@@ -7,21 +7,13 @@
 
 import Foundation
 
-public enum EndPointsRequest {
-    case favorites
-}
-
 struct ManagerGetURL {
     
-    public static func ManagerGetURL(endPoint: EndPointsRequest) -> String {
+    public static func getFavoritesURL() -> String {
         
         let baseURL = InfoPlistBaseURL.getStringValue(forKey: "BaseURL")
         let favorites = InfoPlistBaseURL.getStringValue(forKey: "FavoritesRequestEndPoint")
-        var urlString = ""
-        switch endPoint {
-        case .favorites:
-            urlString = "\(baseURL)\(favorites)"
-        }
+        let urlString = baseURL + favorites
         
         return urlString
     }

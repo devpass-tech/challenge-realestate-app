@@ -15,7 +15,7 @@ class RealEstateAPIClientFavorites: RealEstateAPIClientFavoritesProtocol {
     
     func fetchFavorites(completion: @escaping (Result<[Favorites], ErrorRequest>) -> (Void)) {
         
-        let urlStrings = ManagerGetURL.ManagerGetURL(endPoint: .favorites)
+        let urlStrings = ManagerGetURL.getFavoritesURL()
         
         guard let url = URL(string: urlStrings) else {
             completion(.failure(ErrorRequest.urlNotValid))
