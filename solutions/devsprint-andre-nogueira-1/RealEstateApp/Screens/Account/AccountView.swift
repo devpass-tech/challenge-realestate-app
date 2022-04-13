@@ -9,7 +9,7 @@ import UIKit
 
 final class AccountView: UIView {
     
-    let titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.text = "Account"
         label.font = UIFont.boldSystemFont(ofSize: 22)
@@ -17,11 +17,10 @@ final class AccountView: UIView {
         label.numberOfLines = 0
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
-    let loginLabel: UILabel = {
+    private let loginLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.text = "Login with your account"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -29,13 +28,11 @@ final class AccountView: UIView {
         label.numberOfLines = 3
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
-    lazy var emailText: UITextField = {
+    private lazy var emailText: UITextField = {
         let textField = UITextField(frame: .zero)
-        
         textField.placeholder = "Email"
         textField.textColor = .black
         textField.borderStyle = .roundedRect
@@ -45,11 +42,10 @@ final class AccountView: UIView {
         textField.autocapitalizationType = .none
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
         return textField
     }()
     
-    lazy var passwordText: UITextField = {
+    private lazy var passwordText: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.placeholder = "Password"
         textField.textColor = .black
@@ -60,13 +56,11 @@ final class AccountView: UIView {
         textField.autocorrectionType = .no
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
         return textField
     }()
     
     let loginButton: UIButton = {
         let button = UIButton(type: .system)
-        
         button.setTitle("Login", for: .normal)
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
@@ -74,13 +68,11 @@ final class AccountView: UIView {
         button.layer.cornerRadius = 6
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.translatesAutoresizingMaskIntoConstraints = false
-        
         return button
     }()
     
     let forgotButton: UIButton = {
         let button = UIButton(type: .system)
-        
         button.setTitle("Forgot Password", for: .normal)
         button.backgroundColor = .white
         button.setTitleColor(.systemBlue, for: .normal)
@@ -88,43 +80,36 @@ final class AccountView: UIView {
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 6
         button.translatesAutoresizingMaskIntoConstraints = false
-        
         return button
     }()
     
-    lazy var titleStackView: UIStackView = {
-        var stackview = UIStackView(arrangedSubviews: [titleLabel, loginLabel])
-        
+    private let labelStackView: UIStackView = {
+        var stackview = UIStackView(frame: .zero)
         stackview.axis = .vertical
         stackview.spacing = 20
         stackview.distribution = .fill
         stackview.backgroundColor = .clear
         stackview.translatesAutoresizingMaskIntoConstraints = false
-        
         return stackview
     }()
     
-    lazy var textStackView: UIStackView = {
-        var stackview = UIStackView(arrangedSubviews: [emailText, passwordText])
-        
+    private let textStackView: UIStackView = {
+        var stackview = UIStackView(frame: .zero)
         stackview.axis = .vertical
         stackview.spacing = 10
         stackview.distribution = .fillEqually
         stackview.backgroundColor = .clear
         stackview.translatesAutoresizingMaskIntoConstraints = false
-        
         return stackview
     }()
     
-    lazy var buttonStackView: UIStackView = {
-        var stackview = UIStackView(arrangedSubviews: [loginButton, forgotButton])
-        
+    private let buttonStackView: UIStackView = {
+        var stackview = UIStackView(frame: .zero)
         stackview.axis = .vertical
         stackview.spacing = 10
         stackview.distribution = .fillEqually
         stackview.backgroundColor = .clear
         stackview.translatesAutoresizingMaskIntoConstraints = false
-        
         return stackview
     }()
     
@@ -132,40 +117,47 @@ final class AccountView: UIView {
         super.init(frame: .zero)
         
         backgroundColor = .white
-        setupLayout()
+        setupSubViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupLayout(){
-        
-        self.addSubview(titleStackView)
+    private func setupSubViews() {
+        labelStackView.addArrangedSubview(titleLabel)
+        labelStackView.addArrangedSubview(loginLabel)
+        textStackView.addArrangedSubview(emailText)
+        textStackView.addArrangedSubview(passwordText)
+        buttonStackView.addArrangedSubview(loginButton)
+        buttonStackView.addArrangedSubview(forgotButton)
+        self.addSubview(labelStackView)
         self.addSubview(textStackView)
         self.addSubview(buttonStackView)
         
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
-            titleStackView.safeAreaLayoutGuide.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 15),
-            titleStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            titleStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            labelStackView.safeAreaLayoutGuide.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 15),
+            labelStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
+            labelStackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
             
-            textStackView.topAnchor.constraint(equalTo: titleStackView.bottomAnchor, constant: 15),
-            textStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            textStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            textStackView.topAnchor.constraint(equalTo: labelStackView.bottomAnchor, constant: 15),
+            textStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
+            textStackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
             textStackView.heightAnchor.constraint(equalToConstant: 100),
             
             buttonStackView.topAnchor.constraint(equalTo: textStackView.bottomAnchor, constant: 15),
-            buttonStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            buttonStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            buttonStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
+            buttonStackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
             buttonStackView.heightAnchor.constraint(equalToConstant: 100)
-            
         ])
-        
     }
 }
 
-extension AccountView: UITextFieldDelegate{
+extension AccountView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
