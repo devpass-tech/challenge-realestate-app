@@ -17,12 +17,12 @@ final class AccountViewController: UIViewController {
         return view
     }()
     
-    private var viewModel: AccountViewModelProtocol?
+    private let viewModel: AccountViewModelProtocol
     
     init(viewModel: AccountViewModelProtocol) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         
-        self.viewModel = viewModel
         configureViewModel()
     }
     
@@ -39,19 +39,19 @@ final class AccountViewController: UIViewController {
     }
     
     private func configureViewModel() {
-        viewModel?.didLogin = { result in
+        viewModel.didLogin = { result in
             dump(result)
         }
-        viewModel?.didForgot = { result in
+        viewModel.didForgot = { result in
             dump(result)
         }
     }
     
     @objc func loginPressed(){
-        viewModel?.doLogin()
+        viewModel.doLogin()
     }
     
     @objc func forgotPressed(){
-        viewModel?.doForgot()
+        viewModel.doForgot()
     }
 }
