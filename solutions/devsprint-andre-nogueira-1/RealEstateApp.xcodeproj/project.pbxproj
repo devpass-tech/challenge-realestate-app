@@ -28,6 +28,7 @@
 		B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */; };
 		B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */; };
 		B0EDEDC6280762E200B1AB1F /* InfoPlistBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */; };
+		B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrorRequest.swift; sourceTree = "<group>"; };
 		B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistBaseURL.swift; sourceTree = "<group>"; };
+		B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerGetURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */,
+				B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */,
 			);
 			path = "Plist-URL";
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
+				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
 				B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
