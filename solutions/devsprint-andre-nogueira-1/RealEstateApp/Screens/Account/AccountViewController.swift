@@ -8,20 +8,21 @@
 import UIKit
 
 final class AccountViewController: UIViewController {
-
+    
     private lazy var accountView: AccountView = {
         let view = AccountView()
         view.loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
         view.forgotButton.addTarget(self, action: #selector(forgotPressed), for: .touchUpInside)
-
+        
         return view
     }()
     
-    private let viewModel = AccountViewModel()
+    private var viewModel: AccountViewModelProtocol?
     
-    init() {
+    init(viewModel: AccountViewModelProtocol) {
         super.init(nibName: nil, bundle: nil)
         
+        self.viewModel = viewModel
         configureViewModel()
     }
     
@@ -32,25 +33,25 @@ final class AccountViewController: UIViewController {
     override func loadView() {
         self.view = accountView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     private func configureViewModel() {
-        viewModel.didLogin = { result in
-            print(result)
+        viewModel?.didLogin = { result in
+            dump(result)
         }
-        viewModel.didForgot = { result in
-            print(result)
+        viewModel?.didForgot = { result in
+            dump(result)
         }
     }
     
     @objc func loginPressed(){
-        viewModel.doLogin()
+        viewModel?.doLogin()
     }
     
     @objc func forgotPressed(){
-        viewModel.doForgot()
+        viewModel?.doForgot()
     }
 }
