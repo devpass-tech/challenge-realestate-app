@@ -23,7 +23,7 @@ private extension UITabBarController{
         
         let homeVc = UINavigationController(rootViewController: PropertyListViewController())
         let favoritesVc = UINavigationController(rootViewController: FavoritesViewController())
-        let accountVc = UINavigationController(rootViewController: AccountViewController())
+        let accountVc = UINavigationController(rootViewController: AccountViewController(viewModel: AccountViewModel()))
         
         homeVc.tabBarItem.image = UIImage(systemName: "house")
         favoritesVc.tabBarItem.image = UIImage(systemName: "heart")

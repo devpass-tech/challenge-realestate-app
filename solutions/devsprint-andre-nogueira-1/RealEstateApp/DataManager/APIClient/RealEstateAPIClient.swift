@@ -5,25 +5,22 @@
 //  Created by Rodrigo Borges on 29/09/21.
 //
 
-
 import Foundation
 
-enum ResultError: Error {
-    case badURL, noData, invalidJSON
+protocol RealEstateAPIPropertyProtocol: AnyObject {
+    func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void)
 }
 
 public final class RealEstateAPIClient {
-    struct Constants {
-        static let url = URL(string: "https://raw.githubusercontent.com/devpass-tech/challenge-realestate-app/main/api/listings.json")
-    }
-    func fetchProperties(completion: @escaping (Result<[Property], ResultError>) -> Void) {
-        guard let url = Constants.url else {
-            completion(.failure(.badURL))
+    func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void) {
+        let urlString = ManagerGetURL.getPropertiesURL()
+        guard let url = URL(string: urlString) else {
+            completion(.failure(ErrorRequest.urlNotValid))
             return
         }
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let response = response as? HTTPURLResponse, response.statusCode == 200, let data = data else {
-                completion(.failure(.invalidJSON))
+                completion(.failure(ErrorRequest.invalidJson))
                 return
             }
             do {
@@ -32,7 +29,7 @@ public final class RealEstateAPIClient {
                 completion(.success(result))
             } catch {
                 print(error)
-                completion(.failure(.noData))
+                completion(.failure(ErrorRequest.noData))
             }
         }
         task.resume()
