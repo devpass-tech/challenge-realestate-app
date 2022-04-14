@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54C4595728077B57004DD3DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595628077B57004DD3DF /* LoadingView.swift */; };
+		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
 		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54C4595628077B57004DD3DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54C4595528077B4B004DD3DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				54C4595628077B57004DD3DF /* LoadingView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +158,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				54C4595528077B4B004DD3DF /* Utils */,
 				B0D7AA952805F05B006177F8 /* TabBar */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
@@ -213,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				984DAACE27EE4EAA002F3E8A /* String+Extensions.swift */,
+				54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -397,6 +411,7 @@
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
 				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
+				54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */,
 				A50AC3FA28089F4900873216 /* Address.swift in Sources */,
@@ -417,6 +432,7 @@
 				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
 				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
 				B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */,
+				54C4595728077B57004DD3DF /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
