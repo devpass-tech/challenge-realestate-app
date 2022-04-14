@@ -10,7 +10,6 @@ import UIKit
 extension UIViewController {
     func addLoadingView(with text: String) {
         let loadingView = LoadingView(with: text)
-        loadingView.tag = 2
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(loadingView)
