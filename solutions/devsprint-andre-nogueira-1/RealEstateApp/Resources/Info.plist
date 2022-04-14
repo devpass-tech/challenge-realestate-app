@@ -6,6 +6,8 @@
 	<string>https://raw.githubusercontent.com/devpass-tech/challenge-realestate-app/main/api/</string>
 	<key>FavoritesRequestEndPoint</key>
 	<string>favorites.json</string>
+	<key>PropertyRequestEndPoint</key>
+	<string>listings.json</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -33,13 +33,9 @@ class PropertyListViewController: UIViewController {
     }
 
     func fetchProperties() {
-
-        apiClient.fetchProperties { properties in
-
-            DispatchQueue.main.async {
-
-                self.propertyListView.updateView(with: properties)
-            }
+        apiClient.fetchProperties { [weak self] result in
+            guard let self = self else { return }
+            //passar os dados para a PropertyListView
         }
     }
 }

@@ -18,4 +18,13 @@ struct ManagerGetURL {
         return urlString
     }
     
+    public static func getPropertiesURL() -> String {
+        
+        let baseURL = InfoPlistBaseURL.getStringValue(forKey: "BaseURL")
+        let properties = InfoPlistBaseURL.getStringValue(forKey: "PropertyRequestEndPoint")
+        let urlString = baseURL + properties
+        
+        return urlString
+    }
+    
 }
