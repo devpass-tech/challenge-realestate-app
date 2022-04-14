@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
+		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -22,6 +24,14 @@
 		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
+		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
+		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
+		B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA962805F087006177F8 /* TabBarViewController.swift */; };
+		B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */; };
+		B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */; };
+		B0EDEDC6280762E200B1AB1F /* InfoPlistBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */; };
+		B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */; };
+		E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE07EB28076C6C00B2752F /* AccountFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +65,14 @@
 		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
+		B0D7AA962805F087006177F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrorRequest.swift; sourceTree = "<group>"; };
+		B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistBaseURL.swift; sourceTree = "<group>"; };
+		B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerGetURL.swift; sourceTree = "<group>"; };
+		E9FE07EB28076C6C00B2752F /* AccountFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				980789CD275E943C00CED39A /* FavoritesViewController.swift */,
+				B0EDEDBF280643F100B1AB1F /* FavoritesViewModel.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -93,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				980789D8275EA3C900CED39A /* AccountViewController.swift */,
+				54E204C82804EB8C009FFEDC /* AccountView.swift */,
+				54E204CA28051E0A009FFEDC /* AccountViewModel.swift */,
+				E9FE07EB28076C6C00B2752F /* AccountFactory.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -101,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C072704F1C700F8100A /* APIClient */,
+				B0EDEDC12807200300B1AB1F /* Enums */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -109,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */,
+				B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -116,6 +142,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B0D7AA952805F05B006177F8 /* TabBar */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 				980789CC275E942300CED39A /* Favorites */,
@@ -155,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1E2704F3C400F8100A /* Property.swift */,
+				B0D7AA912805BBB7006177F8 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +237,7 @@
 				980C0C172704F1D500F8100A /* Screens */,
 				9841E72127D687D6005A67DC /* DebugYourViews */,
 				980C0C062704F1C700F8100A /* DataManager */,
+				B0EDEDC4280762AD00B1AB1F /* Plist-URL */,
 				980C0C1D2704F29100F8100A /* Models */,
 				984DAACD27EE4E95002F3E8A /* Extensions */,
 			);
@@ -223,6 +252,31 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B0D7AA952805F05B006177F8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B0D7AA962805F087006177F8 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B0EDEDC12807200300B1AB1F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B0EDEDC22807204800B1AB1F /* EnumErrorRequest.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B0EDEDC4280762AD00B1AB1F /* Plist-URL */ = {
+			isa = PBXGroup;
+			children = (
+				B0EDEDC5280762E200B1AB1F /* InfoPlistBaseURL.swift */,
+				B0EDEDC728076C4400B1AB1F /* ManagerGetURL.swift */,
+			);
+			path = "Plist-URL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +337,7 @@
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "RealEstateApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -335,16 +389,26 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
+				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */,
 				984DAACF27EE4EAA002F3E8A /* String+Extensions.swift in Sources */,
+				B0EDEDC6280762E200B1AB1F /* InfoPlistBaseURL.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */,
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
+				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
+				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
+				B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,7 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -512,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -529,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 42QU6XXW6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -556,7 +620,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 42QU6XXW6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

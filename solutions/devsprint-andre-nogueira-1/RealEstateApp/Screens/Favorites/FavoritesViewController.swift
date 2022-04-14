@@ -11,7 +11,10 @@ class FavoritesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let apiService = RealEstateAPIClientFavorites()
+        let viewModel = FavoritesViewModel(delegate: apiService)
+        
         self.view.backgroundColor = .white
     }
 }
