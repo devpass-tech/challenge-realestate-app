@@ -8,8 +8,6 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-    
-    let loginApiClient = LoginAPIClient()
 
     private let viewModel: PropertyListViewModelProtocol
 
