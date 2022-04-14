@@ -8,9 +8,9 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-    
-    let loginApiClient = LoginAPIClient()
 
+    let loginAPI = LoginAPIClient()
+    
     let propertyListView: PropertyListView = {
 
         let propertyListView = PropertyListView()
@@ -28,8 +28,6 @@ class PropertyListViewController: UIViewController {
         self.view.backgroundColor = .white
 
         fetchProperties()
-        let logimodel = loginApiClient.pegaloginmodel()
-        logimodel?.success
     }
 
     override func loadView() {
