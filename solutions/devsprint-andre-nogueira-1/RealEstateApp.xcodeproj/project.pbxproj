@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */; };
 		54C4595728077B57004DD3DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595628077B57004DD3DF /* LoadingView.swift */; };
 		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
 		54C4595628077B57004DD3DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
+				548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
+				548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */,
 				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */,
