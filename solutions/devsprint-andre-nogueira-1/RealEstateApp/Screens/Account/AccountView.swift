@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AccountView: UIView {
+final class AccountView: BaseView {
     
     private let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
@@ -113,18 +113,7 @@ final class AccountView: UIView {
         return stackview
     }()
     
-    init() {
-        super.init(frame: .zero)
-        
-        backgroundColor = .white
-        setupSubViews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func setupSubViews() {
+    override func setupSubviews() {
         labelStackView.addArrangedSubview(titleLabel)
         labelStackView.addArrangedSubview(loginLabel)
         textStackView.addArrangedSubview(emailText)
