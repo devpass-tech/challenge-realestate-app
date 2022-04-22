@@ -38,6 +38,10 @@ final class AccountViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
     private func configureViewModel() {
         viewModel.didLogin = { result in
             dump(result)
