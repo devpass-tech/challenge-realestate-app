@@ -74,35 +74,34 @@ final class PropertyTableViewCell: UITableViewCell {
     }
 
     func configureHierarchy() {
-        addSubview(announcementImageView)
-        addSubview(adDescriptionLabel)
-        addSubview(condominium)
-        addSubview(characteristics)
-        addSubview(descriptionAddress)
+        [announcementImageView,adDescriptionLabel,condominium, characteristics,descriptionAddress].forEach {
+            addSubview($0)
+        }
+
     }
 
     func configureViewConstraints() {
         NSLayoutConstraint.activate([
         announcementImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-        announcementImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-        announcementImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+        announcementImageView.rightAnchor.constraint(equalTo: rightAnchor),
+        announcementImageView.leftAnchor.constraint(equalTo: leftAnchor),
         announcementImageView.heightAnchor.constraint(equalToConstant: 200),
         
         adDescriptionLabel.topAnchor.constraint(equalTo: announcementImageView.bottomAnchor, constant: 10),
-        adDescriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-        adDescriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+        adDescriptionLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+        adDescriptionLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
         
         condominium.topAnchor.constraint(equalTo: adDescriptionLabel.bottomAnchor, constant: 10),
-        condominium.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-        condominium.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+        condominium.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+        condominium.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
         
         characteristics.topAnchor.constraint(equalTo: condominium.bottomAnchor, constant: 10),
-        characteristics.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-        characteristics.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+        characteristics.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+        characteristics.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
         
         descriptionAddress.topAnchor.constraint(equalTo: characteristics.bottomAnchor, constant: 10),
-        descriptionAddress.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-        descriptionAddress.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+        descriptionAddress.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+        descriptionAddress.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
         
         bottomAnchor.constraint(equalTo: descriptionAddress.bottomAnchor, constant: 10)
         ])
