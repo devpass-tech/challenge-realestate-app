@@ -28,6 +28,8 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		A50AC3FA28089F4900873216 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3F928089F4900873216 /* Address.swift */; };
 		A50AC3FC28089FEA00873216 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3FB28089FEA00873216 /* Pricing.swift */; };
+		A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4052808BEC000873216 /* PropertyImageView.swift */; };
+		A50AC4082808C25700873216 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4072808C25700873216 /* ViewCodable.swift */; };
 		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
 		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
 		B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA962805F087006177F8 /* TabBarViewController.swift */; };
@@ -73,6 +75,8 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50AC3F928089F4900873216 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		A50AC3FB28089FEA00873216 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
+		A50AC4052808BEC000873216 /* PropertyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImageView.swift; sourceTree = "<group>"; };
+		A50AC4072808C25700873216 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
 		B0D7AA962805F087006177F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				54C4595628077B57004DD3DF /* LoadingView.swift */,
+				A50AC4072808C25700873216 /* ViewCodable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
+				A50AC4052808BEC000873216 /* PropertyImageView.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -425,10 +431,12 @@
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
 				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */,
 				E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				A50AC4082808C25700873216 /* ViewCodable.swift in Sources */,
 				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
 				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
 				B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */,
