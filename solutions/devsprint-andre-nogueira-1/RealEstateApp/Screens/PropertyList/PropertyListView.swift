@@ -89,5 +89,3 @@ extension PropertyListView: UITableViewDataSource {
         return cell
     }
 }
-
-
