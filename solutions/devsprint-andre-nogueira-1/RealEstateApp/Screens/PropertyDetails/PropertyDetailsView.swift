@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-public class PropertyDetailsView: UIView {
+public class PropertyDetailsView: BaseView {
     
     let scrollView: UIScrollView = {
         var scroll = UIScrollView(frame: .zero)
@@ -33,72 +33,72 @@ public class PropertyDetailsView: UIView {
     
     private let valueLabel: UILabel = {
         let label = UILabel()
-        label.text = "R$ 405.000"
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor.black
+        label.text = LocalizableString.value
+        label.font = DesignSystem.Typography.boldL
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let condLabel: UILabel = {
         let label = UILabel()
-        label.text = "Condomínio R$ 495"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.textColor = UIColor.black
+        label.text = LocalizableString.condominium
+        label.font = DesignSystem.Typography.boldM
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let iptuLabel: UILabel = {
         let label = UILabel()
-        label.text = "IPTU R$ 0"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.textColor = UIColor.black
+        label.text = LocalizableString.iptu
+        label.font = DesignSystem.Typography.boldM
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let sizeLabel: UILabel = {
         let label = UILabel()
-        label.text = "69 m²"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = UIColor.gray
+        label.text = LocalizableString.size
+        label.font = DesignSystem.Typography.boldS
+        label.textColor = DesignSystem.ColorPallet.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let roomsLabel: UILabel = {
         let label = UILabel()
-        label.text = "3 quartos"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = UIColor.gray
+        label.text = LocalizableString.rooms
+        label.font = DesignSystem.Typography.boldS
+        label.textColor = DesignSystem.ColorPallet.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let bathLabel: UILabel = {
         let label = UILabel()
-        label.text = "2 banheiros"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = UIColor.gray
+        label.text = LocalizableString.baths
+        label.font = DesignSystem.Typography.boldS
+        label.textColor = DesignSystem.ColorPallet.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let parkLabel: UILabel = {
         let label = UILabel()
-        label.text = "1 vagas"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = UIColor.gray
+        label.text = LocalizableString.parks
+        label.font = DesignSystem.Typography.boldS
+        label.textColor = DesignSystem.ColorPallet.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let addressLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sem endereço"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = UIColor.gray
+        label.text = LocalizableString.address
+        label.font = DesignSystem.Typography.boldS
+        label.textColor = DesignSystem.ColorPallet.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -121,9 +121,9 @@ public class PropertyDetailsView: UIView {
     
     private let descriptionTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Descrição"
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor.black
+        label.text = LocalizableString.descriptions
+        label.font = DesignSystem.Typography.boldL
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -131,10 +131,10 @@ public class PropertyDetailsView: UIView {
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.text = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit sit amet mauris bibendum feugiat. Aenean blandit ut diam id placerat. Quisque aliquet luctus lacus quis rhoncus. Proin id scelerisque diam. Aenean vehicula vel ipsum in vestibulum. Integer aliquet sollicitudin est. Donec commodo lobortis nulla, sed lobortis sapien efficitur ut. Phasellus vitae condimentum nibh, vel pellentesque sem. Nam in nulla semper, pharetra dui non, rutrum justo. Nulla eu ornare dui. Nullam pretium libero sit amet porta dignissim. Nulla consectetur convallis turpis eget pulvinar. Curabitur suscipit eget nisi et feugiat. Cras sollicitudin fermentum est, nec pellentesque lacus fringilla non. In id quam volutpat, placerat odio et, consequat leo. Aliquam dolor eros, suscipit et elit vel, gravida aliquam tortor. Maecenas pharetra laoreet bibendum. Proin in efficitur justo, vel varius justo. In hac habitasse platea dictumst. Aenean id elit augue. Ut vitae rhoncus odio. Nam dignissim lectus neque. Sed ut ante ultrices, posuere nunc et, convallis mauris. Aliquam justo purus, commodo eu facilisis eget, elementum ut dolor. Maecenas feugiat eleifend tellus quis congue. Fusce accumsan mauris sit amet tellus eleifend, non lobortis tellus viverra. Nulla tristique, lorem nec tristique tempor, nisi magna consequat mi, et maximus leo lectus ut tortor. Mauris rhoncus gravida tortor ac fermentum. Praesent fringilla eleifend nunc, et blandit dui sollicitudin vel. Fusce at venenatis metus. Nulla interdum felis vitae tempus porta. Nunc in nisl vel felis hendrerit consequat. Fusce at dictum magna. Maecenas sed bibendum nulla. Pellentesque ut dignissim turpis, non iaculis sapien. Mauris finibus sapien quam, et pellentesque arcu semper in. Integer odio dui, pulvinar nec est a, venenatis tincidunt tortor. Fusce sagittis nisl vitae rutrum pharetra. Pellentesque accumsan, ante ac vehicula finibus, elit magna consequat dui, at interdum tellus mi sed diam. Vivamus lacinia, sapien eu viverra imperdiet, libero eros laoreet orci, eget imperdiet ligula arcu et sapien. Donec et semper dui. Suspendisse potenti. Donec sed orci ante. Nunc malesuada laoreet velit sed venenatis. Nullam efficitur justo a nulla pellentesque, eu aliquam lectus aliquet. Ut ut consectetur quam. In erat justo, cursus ut sem iaculis, faucibus placerat metus. Aenean a lacus non purus finibus fringilla nec vitae metus. Nulla varius turpis sit amet enim consequat, eu lacinia lectus suscipit. Duis lorem diam, blandit at urna at, vulputate ornare arcu. Mauris ultricies, velit at hendrerit accumsan, turpis ipsum imperdiet metus, sit amet convallis massa purus at sem. "
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.text = LocalizableString.loremipsum
+        label.font = DesignSystem.Typography.m
         label.sizeToFit()
-        label.textColor = UIColor.black
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -144,12 +144,12 @@ public class PropertyDetailsView: UIView {
     
     private lazy var  seeMoreOrHideButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Ver mais", for: .normal)
-        button.backgroundColor = .systemBlue
+        button.setTitle(LocalizableString.seeMore, for: .normal)
+        button.backgroundColor = DesignSystem.ColorPallet.blue
         button.setTitleColor(.white, for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 6
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.titleLabel?.font = DesignSystem.Typography.l
         button.addTarget(self, action: #selector(seeMoreOrHidePressed), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -157,19 +157,19 @@ public class PropertyDetailsView: UIView {
     
     private let interestLabel: UILabel = {
         let label = UILabel()
-        label.text = "Tem interesse?"
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor.black
+        label.text = LocalizableString.interest
+        label.font = DesignSystem.Typography.boldL
+        label.textColor = DesignSystem.ColorPallet.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var nameText: UITextField = {
         let textField = UITextField(frame: .zero)
-        textField.placeholder = "Nome"
-        textField.textColor = .black
+        textField.placeholder = LocalizableString.name
+        textField.textColor = DesignSystem.ColorPallet.black
         textField.borderStyle = .roundedRect
-        textField.font = UIFont.systemFont(ofSize: 13)
+        textField.font = DesignSystem.Typography.s
         textField.textAlignment = .left
         textField.keyboardType = .default
         textField.autocapitalizationType = .words
@@ -180,10 +180,10 @@ public class PropertyDetailsView: UIView {
     
     private lazy var emailText: UITextField = {
         let textField = UITextField(frame: .zero)
-        textField.placeholder = "Email"
-        textField.textColor = .black
+        textField.placeholder = LocalizableString.email
+        textField.textColor = DesignSystem.ColorPallet.black
         textField.borderStyle = .roundedRect
-        textField.font = UIFont.systemFont(ofSize: 13)
+        textField.font = DesignSystem.Typography.s
         textField.textAlignment = .left
         textField.keyboardType = .emailAddress
         textField.autocapitalizationType = .none
@@ -194,55 +194,28 @@ public class PropertyDetailsView: UIView {
     
     lazy var  sendContactButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Enviar contato", for: .normal)
-        button.backgroundColor = .systemBlue
+        button.setTitle(LocalizableString.contact, for: .normal)
+        button.backgroundColor = DesignSystem.ColorPallet.blue
         button.setTitleColor(.white, for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 6
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.titleLabel?.font = DesignSystem.Typography.boldL
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-        
-    init() {
-        super.init(frame: .zero)
-        self.backgroundColor = .white
-        
-        setupSubviews()
-    }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupSubviews() {
+    override func setupSubviews() {
         self.addSubview(scrollView)
         scrollView.addSubview(contentView)
-        contentView.addSubview(propertyImageView)
-        contentView.addSubview(valueLabel)
-        contentView.addSubview(condLabel)
-        contentView.addSubview(iptuLabel)
-        contentView.addSubview(sizeLabel)
-        contentView.addSubview(roomsLabel)
-        contentView.addSubview(bathLabel)
-        contentView.addSubview(parkLabel)
-        contentView.addSubview(addressLabel)
-        contentView.addSubview(mapView)
-        contentView.addSubview(descriptionTitleLabel)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(seeMoreOrHideButton)
-        contentView.addSubview(interestLabel)
-        contentView.addSubview(nameText)
-        contentView.addSubview(emailText)
-        contentView.addSubview(sendContactButton)
+        
+        [propertyImageView, valueLabel, condLabel, iptuLabel, sizeLabel, roomsLabel, bathLabel, parkLabel, addressLabel, mapView, descriptionTitleLabel, descriptionLabel, seeMoreOrHideButton, interestLabel, nameText, emailText, sendContactButton].forEach { contentView.addSubview($0) }
         
         setupConstraints()
     }
     
     func setupConstraints() {
-        constraintDescriptionHeightMin =             descriptionLabel.heightAnchor.constraint(equalToConstant: 200)
-        constraintDescriptionHeightMax =  descriptionLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 200)
-        parkLabel.setContentHuggingPriority(UILayoutPriority.fittingSizeLevel, for: .horizontal)
+        constraintDescriptionHeightMin = descriptionLabel.heightAnchor.constraint(equalToConstant: 200)
+        constraintDescriptionHeightMax = descriptionLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 200)
 
         NSLayoutConstraint.activate([
             scrollView.safeAreaLayoutGuide.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
@@ -291,7 +264,7 @@ public class PropertyDetailsView: UIView {
             
             parkLabel.topAnchor.constraint(equalTo: condLabel.bottomAnchor, constant: 10),
             parkLabel.leftAnchor.constraint(equalTo: bathLabel.rightAnchor, constant: 10),
-            parkLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -15),
+            parkLabel.rightAnchor.constraint(lessThanOrEqualTo: contentView.rightAnchor, constant: -15),
             parkLabel.heightAnchor.constraint(equalToConstant: 20),
             
             addressLabel.topAnchor.constraint(equalTo: parkLabel.bottomAnchor, constant: 5),
@@ -347,9 +320,9 @@ public class PropertyDetailsView: UIView {
         constraintDescriptionHeightMax.isActive = !constraintDescriptionHeightMin.isActive
        
         if (constraintDescriptionHeightMin.isActive) {
-            seeMoreOrHideButton.setTitle("Ver Mais", for: .normal)
+            seeMoreOrHideButton.setTitle(LocalizableString.seeMore, for: .normal)
         } else {
-            seeMoreOrHideButton.setTitle("Esconder", for: .normal)
+            seeMoreOrHideButton.setTitle(LocalizableString.hide, for: .normal)
         }
       
         UIView.animate(withDuration: 0.3, animations: {

@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  RealEstateApp
+
+  Created by Caio Alcântara on 20/04/22.
+  
+*/
+
+"Loremipsum" = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit sit amet mauris bibendum feugiat. Aenean blandit ut diam id placerat. Quisque aliquet luctus lacus quis rhoncus. Proin id scelerisque diam. Aenean vehicula vel ipsum in vestibulum. Integer aliquet sollicitudin est. Donec commodo lobortis nulla, sed lobortis sapien efficitur ut. Phasellus vitae condimentum nibh, vel pellentesque sem. Nam in nulla semper, pharetra dui non, rutrum justo. Nulla eu ornare dui. Nullam pretium libero sit amet porta dignissim. Nulla consectetur convallis turpis eget pulvinar. Curabitur suscipit eget nisi et feugiat. Cras sollicitudin fermentum est, nec pellentesque lacus fringilla non. In id quam volutpat, placerat odio et, consequat leo. Aliquam dolor eros, suscipit et elit vel, gravida aliquam tortor. Maecenas pharetra laoreet bibendum. Proin in efficitur justo, vel varius justo. In hac habitasse platea dictumst. Aenean id elit augue. Ut vitae rhoncus odio. Nam dignissim lectus neque. Sed ut ante ultrices, posuere nunc et, convallis mauris. Aliquam justo purus, commodo eu facilisis eget, elementum ut dolor. Maecenas feugiat eleifend tellus quis congue. Fusce accumsan mauris sit amet tellus eleifend, non lobortis tellus viverra. Nulla tristique, lorem nec tristique tempor, nisi magna consequat mi, et maximus leo lectus ut tortor. Mauris rhoncus gravida tortor ac fermentum. Praesent fringilla eleifend nunc, et blandit dui sollicitudin vel. Fusce at venenatis metus. Nulla interdum felis vitae tempus porta. Nunc in nisl vel felis hendrerit consequat. Fusce at dictum magna. Maecenas sed bibendum nulla. Pellentesque ut dignissim turpis, non iaculis sapien. Mauris finibus sapien quam, et pellentesque arcu semper in. Integer odio dui, pulvinar nec est a, venenatis tincidunt tortor. Fusce sagittis nisl vitae rutrum pharetra. Pellentesque accumsan, ante ac vehicula finibus, elit magna consequat dui, at interdum tellus mi sed diam. Vivamus lacinia, sapien eu viverra imperdiet, libero eros laoreet orci, eget imperdiet ligula arcu et sapien. Donec et semper dui. Suspendisse potenti. Donec sed orci ante. Nunc malesuada laoreet velit sed venenatis. Nullam efficitur justo a nulla pellentesque, eu aliquam lectus aliquet. Ut ut consectetur quam. In erat justo, cursus ut sem iaculis, faucibus placerat metus. Aenean a lacus non purus finibus fringilla nec vitae metus. Nulla varius turpis sit amet enim consequat, eu lacinia lectus suscipit. Duis lorem diam, blandit at urna at, vulputate ornare arcu. Mauris ultricies, velit at hendrerit accumsan, turpis ipsum imperdiet metus, sit amet convallis massa purus at sem. ";
+"Value" = "R$ 405.000";
+"Condominium" = "Condomínio R$ 495";
+"IPTU" = "IPTU R$ 0";
+"Size" = "69 m²";
+"Rooms" = "3 quartos";
+"Baths" = "2 banheiros";
+"Parks" = "1 vagas";
+"Address" = "Sem endereço";
+"Descriptions" = "Descrição";
+"SeeMore" = "Ver mais";
+"Interest" = "Tem interesse?";
+"Email" = "Email";
+"Contact" = "Enviar contato";
+"Hide" = "Esconder";

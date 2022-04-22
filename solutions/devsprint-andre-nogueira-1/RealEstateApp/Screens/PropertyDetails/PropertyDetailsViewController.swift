@@ -23,7 +23,6 @@ class PropertyDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Detalhes da Propriedade"
-        self.hideKeyboardWhenTappedAround()
         self.handleKeyboardPresentation()
         self.view.backgroundColor = .white
     }
