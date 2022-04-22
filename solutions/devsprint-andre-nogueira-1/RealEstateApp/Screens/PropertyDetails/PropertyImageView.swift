@@ -7,12 +7,12 @@
 
 import UIKit
 
-class PropertyImageView: UIView, ViewCodable {
+class PropertyImageView: BaseView, ViewCodable {
     lazy var propertyImage: UIImageView = {
-        let i = UIImageView()
-        i.translatesAutoresizingMaskIntoConstraints = false
-        i.contentMode = .scaleToFill
-        return i
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleToFill
+        return imageView
     }()
     
     override init(frame: CGRect) {
