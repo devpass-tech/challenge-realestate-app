@@ -22,7 +22,7 @@ final class PropertyListView: UIView {
 
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.listViewCellIdentifier)
+        tableView.register(PropertyTableViewCell.self, forCellReuseIdentifier: PropertyTableViewCell.identifier)
         tableView.dataSource = self
         return tableView
     }()
@@ -84,8 +84,8 @@ extension PropertyListView: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: self.listViewCellIdentifier)!
-        cell.textLabel?.text = self.listItems[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier)!
+//        cell.textLabel?.text = self.listItems[indexPath.row]
         return cell
     }
 }

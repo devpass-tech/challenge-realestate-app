@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
 				984DAACB27EE4A66002F3E8A /* PropertyListView.swift */,
+				52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
+				52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				984DAACF27EE4EAA002F3E8A /* String+Extensions.swift in Sources */,
