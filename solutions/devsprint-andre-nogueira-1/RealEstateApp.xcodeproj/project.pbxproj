@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
 		54309171281094F900BDC903 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54309170281094F900BDC903 /* BaseView.swift */; };
 		543091732810A04500BDC903 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543091722810A04500BDC903 /* Localizable.strings */; };
 		543091752811D30F00BDC903 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091742811D30E00BDC903 /* DesignSystem.swift */; };
 		543091792811EB4100BDC903 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091782811EB4100BDC903 /* UIView+Extensions.swift */; };
 		5430917B2812203300BDC903 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430917A2812203300BDC903 /* LocalizableString.swift */; };
 		548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */; };
-		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
 		54C4595728077B57004DD3DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595628077B57004DD3DF /* LoadingView.swift */; };
 		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
@@ -58,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		54309170281094F900BDC903 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		543091722810A04500BDC903 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		543091742811D30E00BDC903 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		543091782811EB4100BDC903 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		5430917A2812203300BDC903 /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
-		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		54C4595628077B57004DD3DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
