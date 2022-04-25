@@ -11,7 +11,7 @@ protocol RealEstateAPIPropertyProtocol: AnyObject {
     func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void)
 }
 
-public final class RealEstateAPIClient {
+public final class RealEstateAPIClient: RealEstateAPIPropertyProtocol {
     func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void) {
         let urlString = ManagerGetURL.getPropertiesURL()
         guard let url = URL(string: urlString) else {
