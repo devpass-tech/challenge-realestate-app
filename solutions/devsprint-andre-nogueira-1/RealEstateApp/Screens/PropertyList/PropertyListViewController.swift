@@ -16,12 +16,18 @@ class PropertyListViewController: UIViewController {
     }()
 
     let apiClient = RealEstateAPIClient()
+    
+    private lazy var button: UIBarButtonItem = {
+        let button = UIBarButtonItem()
+        button.title = "Settings"
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Real Estate App 🏡"
+        navigationItem.title = "Real Estate App "
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(handleButton))
+        
 
         self.view.backgroundColor = .white
 
@@ -31,6 +37,8 @@ class PropertyListViewController: UIViewController {
     override func loadView() {
         self.view = propertyListView
     }
+    
+    
 
     func fetchProperties() {
 
@@ -41,6 +49,10 @@ class PropertyListViewController: UIViewController {
                 self.propertyListView.updateView(with: properties)
             }
         }
+    }
+    
+    @objc func handleButton() {
+        print("click")
     }
 }
 

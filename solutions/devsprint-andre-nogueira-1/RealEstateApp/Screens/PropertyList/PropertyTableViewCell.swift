@@ -82,7 +82,7 @@ final class PropertyTableViewCell: UITableViewCell {
 
     func configureViewConstraints() {
         NSLayoutConstraint.activate([
-        announcementImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+        announcementImageView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
         announcementImageView.rightAnchor.constraint(equalTo: rightAnchor),
         announcementImageView.leftAnchor.constraint(equalTo: leftAnchor),
         announcementImageView.heightAnchor.constraint(equalToConstant: 200),
