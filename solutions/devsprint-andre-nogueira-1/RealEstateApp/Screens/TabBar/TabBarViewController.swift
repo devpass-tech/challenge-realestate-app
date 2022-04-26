@@ -21,7 +21,7 @@ private extension UITabBarController{
         self.view.backgroundColor = .systemBackground
         self.tabBar.tintColor = .systemBlue
         
-        let homeVc = UINavigationController(rootViewController: PropertyListViewController())
+        let homeVc = UINavigationController(rootViewController: PropertyListFactory.createPropertyList())
         let favoritesVc = UINavigationController(rootViewController: FavoritesViewController())
         let accountVc = UINavigationController(rootViewController: AccountFactory.createAccount())
         

@@ -109,12 +109,8 @@ public class PropertyDetailsView: BaseView {
         return region
     }()
     
-    private lazy var mapView: MKMapView = {
-        var map = MKMapView(frame: .zero)
-        map.mapType = .standard
-        map.isZoomEnabled = false
-        map.isScrollEnabled = false
-        map.setRegion(regionCoordinate, animated: true)
+    private lazy var mapView: MapLocationView = {
+        var map = MapLocationView()
         map.translatesAutoresizingMaskIntoConstraints = false
         return map
     }()
@@ -210,6 +206,7 @@ public class PropertyDetailsView: BaseView {
         
         [propertyImageView, valueLabel, condLabel, iptuLabel, sizeLabel, roomsLabel, bathLabel, parkLabel, addressLabel, mapView, descriptionTitleLabel, descriptionLabel, seeMoreOrHideButton, interestLabel, nameText, emailText, sendContactButton].forEach { contentView.addSubview($0) }
         
+        mapView.setLocation(lat: -23.468472, long: -46.579770)
         setupConstraints()
     }
     
