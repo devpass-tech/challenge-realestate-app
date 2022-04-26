@@ -8,7 +8,7 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-
+    
     let propertyListView: PropertyListView = {
 
         let propertyListView = PropertyListView()
