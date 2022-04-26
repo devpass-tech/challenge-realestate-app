@@ -27,4 +27,12 @@ struct ManagerGetURL {
         return urlString
     }
     
+    public static func getLoginURL() -> String {
+        
+        let baseURL = InfoPlistBaseURL.getStringValue(forKey: "BaseURL")
+        let login = InfoPlistBaseURL.getStringValue(forKey: "LoginRequestEndPoint")
+        let urlString = baseURL + login
+        
+        return urlString
+    }
 }

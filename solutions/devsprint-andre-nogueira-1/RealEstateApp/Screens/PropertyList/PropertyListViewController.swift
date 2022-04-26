@@ -10,7 +10,7 @@ import UIKit
 class PropertyListViewController: UIViewController {
 
     private let viewModel: PropertyListViewModelProtocol
-
+    
     private let propertyListView: PropertyListView = {
         let propertyListView = PropertyListView()
         return propertyListView
