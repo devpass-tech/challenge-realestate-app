@@ -26,7 +26,7 @@ final class PropertyListView: UIView {
         tableView.dataSource = self
         return tableView
     }()
-
+    
     init() {
 
         super.init(frame: .zero)
@@ -42,26 +42,26 @@ final class PropertyListView: UIView {
 private extension PropertyListView {
 
     func setupViews() {
-
         self.backgroundColor = .white
-
         self.configureSubviews()
         self.configureSubviewsConstraints()
     }
 
     func configureSubviews() {
 
-        self.addSubview(self.tableView)
+        addSubview(self.tableView)
+        
     }
 
     func configureSubviewsConstraints() {
 
         NSLayoutConstraint.activate([
-
-            self.tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.tableView.topAnchor.constraint(equalTo: self.topAnchor),
-            self.tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            
+            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            tableView.topAnchor.constraint(equalTo: self.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            
         ])
     }
 }
@@ -72,6 +72,7 @@ extension PropertyListView {
 
         self.listItems = repositories
         self.tableView.reloadData()
+
     }
 }
 
