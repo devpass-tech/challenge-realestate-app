@@ -50,12 +50,13 @@ private extension PropertyListView {
     func configureSubviews() {
 
         addSubview(self.tableView)
+        
     }
 
     func configureSubviewsConstraints() {
 
         NSLayoutConstraint.activate([
-
+            
             tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             tableView.topAnchor.constraint(equalTo: self.topAnchor),
@@ -71,6 +72,7 @@ extension PropertyListView {
 
         self.listItems = repositories
         self.tableView.reloadData()
+
     }
 }
 

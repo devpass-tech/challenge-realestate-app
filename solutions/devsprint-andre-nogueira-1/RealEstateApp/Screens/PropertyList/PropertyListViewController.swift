@@ -7,7 +7,12 @@
 
 import UIKit
 
-class PropertyListViewController: UIViewController {
+class ResultsVC: UIViewController {
+ 
+
+}
+
+class PropertyListViewController: UIViewController, UISearchResultsUpdating {
 
     let propertyListView: PropertyListView = {
 
@@ -17,18 +22,16 @@ class PropertyListViewController: UIViewController {
 
     let apiClient = RealEstateAPIClient()
     
-    private lazy var button: UIBarButtonItem = {
-        let button = UIBarButtonItem()
-        button.title = "Settings"
-        return button
-    }()
-
+    let searchController = UISearchController(searchResultsController: ResultsVC())
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Real Estate App "
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(handleButton))
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
         
-
         self.view.backgroundColor = .white
 
         fetchProperties()
@@ -39,7 +42,16 @@ class PropertyListViewController: UIViewController {
     }
     
     
-
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        
+       let vc = searchController.searchResultsController as? ResultsVC
+        vc?.view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        print(text)
+    }
+    
     func fetchProperties() {
 
         apiClient.fetchProperties { properties in
@@ -50,7 +62,6 @@ class PropertyListViewController: UIViewController {
             }
         }
     }
-    
     @objc func handleButton() {
         print("click")
     }
