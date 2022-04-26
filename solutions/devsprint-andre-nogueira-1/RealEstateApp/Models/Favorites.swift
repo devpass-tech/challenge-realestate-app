@@ -21,26 +21,3 @@ struct Favorites: Codable {
     let bathrooms, bedrooms: Int?
     let pricingInfos: PricingInfos?
 }
-
-// MARK: - Address
-struct Address: Codable {
-    let city, neighborhood: String?
-    let geoLocation: GeoLocation?
-}
-
-// MARK: - GeoLocation
-struct GeoLocation: Codable {
-    let precision: String?
-    let location: Location?
-}
-
-// MARK: - Location
-struct Location: Codable {
-    let lon, lat: Double?
-}
-
-// MARK: - PricingInfos
-struct PricingInfos: Codable {
-    let yearlyIptu, price, businessType, monthlyCondoFee: String?
-    let period, rentalTotalPrice: String?
-}

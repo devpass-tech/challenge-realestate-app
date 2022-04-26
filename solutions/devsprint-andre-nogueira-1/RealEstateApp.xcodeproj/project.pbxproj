@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54309171281094F900BDC903 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54309170281094F900BDC903 /* BaseView.swift */; };
+		543091732810A04500BDC903 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543091722810A04500BDC903 /* Localizable.strings */; };
+		543091752811D30F00BDC903 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091742811D30E00BDC903 /* DesignSystem.swift */; };
+		543091792811EB4100BDC903 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091782811EB4100BDC903 /* UIView+Extensions.swift */; };
+		5430917B2812203300BDC903 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430917A2812203300BDC903 /* LocalizableString.swift */; };
+		548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */; };
+		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
+		54C4595728077B57004DD3DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595628077B57004DD3DF /* LoadingView.swift */; };
+		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
 		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
@@ -24,6 +33,10 @@
 		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
+		A50AC3FA28089F4900873216 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3F928089F4900873216 /* Address.swift */; };
+		A50AC3FC28089FEA00873216 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3FB28089FEA00873216 /* Pricing.swift */; };
+		A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4052808BEC000873216 /* PropertyImageView.swift */; };
+		A50AC4082808C25700873216 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4072808C25700873216 /* ViewCodable.swift */; };
 		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
 		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
 		B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA962805F087006177F8 /* TabBarViewController.swift */; };
@@ -45,6 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54309170281094F900BDC903 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		543091722810A04500BDC903 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		543091742811D30E00BDC903 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		543091782811EB4100BDC903 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5430917A2812203300BDC903 /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
+		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		54C4595628077B57004DD3DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +87,10 @@
 		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50AC3F928089F4900873216 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		A50AC3FB28089FEA00873216 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
+		A50AC4052808BEC000873216 /* PropertyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImageView.swift; sourceTree = "<group>"; };
+		A50AC4072808C25700873216 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
 		B0D7AA962805F087006177F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +119,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54C4595528077B4B004DD3DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				54C4595628077B57004DD3DF /* LoadingView.swift */,
+				A50AC4072808C25700873216 /* ViewCodable.swift */,
+				54309170281094F900BDC903 /* BaseView.swift */,
+				543091742811D30E00BDC903 /* DesignSystem.swift */,
+				5430917A2812203300BDC903 /* LocalizableString.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +180,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				54C4595528077B4B004DD3DF /* Utils */,
 				B0D7AA952805F05B006177F8 /* TabBar */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
@@ -157,6 +196,7 @@
 			children = (
 				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
 				984DAACB27EE4A66002F3E8A /* PropertyListView.swift */,
+				52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -165,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
+				A50AC4052808BEC000873216 /* PropertyImageView.swift */,
+				548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -182,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1E2704F3C400F8100A /* Property.swift */,
+				A50AC3F928089F4900873216 /* Address.swift */,
+				A50AC3FB28089FEA00873216 /* Pricing.swift */,
 				B0D7AA912805BBB7006177F8 /* Favorites.swift */,
 			);
 			path = Models;
@@ -207,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				984DAACE27EE4EAA002F3E8A /* String+Extensions.swift */,
+				54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */,
+				543091782811EB4100BDC903 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +296,7 @@
 				986153D82704EE2F00838CA6 /* Assets.xcassets */,
 				986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */,
 				986153DD2704EE2F00838CA6 /* Info.plist */,
+				543091722810A04500BDC903 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -368,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */,
+				543091732810A04500BDC903 /* Localizable.strings in Resources */,
 				986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,28 +435,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543091752811D30F00BDC903 /* DesignSystem.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
+				548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */,
+				52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */,
 				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
+				5430917B2812203300BDC903 /* LocalizableString.swift in Sources */,
+				54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				B0EDEDC32807204800B1AB1F /* EnumErrorRequest.swift in Sources */,
+				A50AC3FA28089F4900873216 /* Address.swift in Sources */,
 				984DAACF27EE4EAA002F3E8A /* String+Extensions.swift in Sources */,
 				B0EDEDC6280762E200B1AB1F /* InfoPlistBaseURL.swift in Sources */,
+				543091792811EB4100BDC903 /* UIView+Extensions.swift in Sources */,
+				54309171281094F900BDC903 /* BaseView.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				A50AC3FC28089FEA00873216 /* Pricing.swift in Sources */,
 				54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */,
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
 				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */,
 				E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				A50AC4082808C25700873216 /* ViewCodable.swift in Sources */,
 				B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */,
 				B0EDEDC828076C4400B1AB1F /* ManagerGetURL.swift in Sources */,
 				B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */,
+				54C4595728077B57004DD3DF /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
