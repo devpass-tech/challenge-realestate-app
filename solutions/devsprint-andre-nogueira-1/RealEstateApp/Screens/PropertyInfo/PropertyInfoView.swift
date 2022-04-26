@@ -1,6 +1,6 @@
 import UIKit
 
-class PropertyInfoView: UIView {
+class PropertyInfoView: BaseView, ViewCodable {
     
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
@@ -37,24 +37,14 @@ class PropertyInfoView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-     
-    init() {
-        super.init(frame: .zero)
-        self.hierarchy()
-        self.setConstraints()
-    }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func hierarchy() {
+    func setUpHierarchy() {
         [priceLabel, buildingLabel, infoLabel, addressLabel].forEach {
             addSubview($0)
         }
     }
-    
-    func setConstraints() {
+   
+    func setUpConstraints() {
         NSLayoutConstraint.activate([
             priceLabel.topAnchor.constraint(equalTo: bottomAnchor, constant: 10),
             priceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
