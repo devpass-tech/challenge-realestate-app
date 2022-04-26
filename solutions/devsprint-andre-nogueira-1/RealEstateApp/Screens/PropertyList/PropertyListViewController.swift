@@ -26,6 +26,7 @@ class PropertyListViewController: UIViewController {
         self.view.backgroundColor = .white
 
         fetchProperties()
+        setButtonItem()
     }
 
     override func loadView() {
@@ -37,6 +38,16 @@ class PropertyListViewController: UIViewController {
             guard let self = self else { return }
             //passar os dados para a PropertyListView
         }
+    }
+    
+    private func setButtonItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(openSettings))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .done, target: self, action: #selector(openSettings))
+        navigationItem.rightBarButtonItem?.isEnabled = true
+    }
+    
+    @objc private func openSettings() {
+        navigationController?.present(SettingsViewController(), animated: true)
     }
 }
 

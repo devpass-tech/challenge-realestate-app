@@ -11,7 +11,7 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Settings"
+        
         setUpViewConfiguration()
     }
     
@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
     }
     
     func setUpViewConfiguration(){
-        navigationController?.title = "Settings"
+        navigationController?.navigationItem.title = "Settings"
     }
     
 }

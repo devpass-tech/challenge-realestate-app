@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
 		54309171281094F900BDC903 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54309170281094F900BDC903 /* BaseView.swift */; };
 		543091732810A04500BDC903 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543091722810A04500BDC903 /* Localizable.strings */; };
 		543091752811D30F00BDC903 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091742811D30E00BDC903 /* DesignSystem.swift */; };
 		543091792811EB4100BDC903 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543091782811EB4100BDC903 /* UIView+Extensions.swift */; };
 		5430917B2812203300BDC903 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430917A2812203300BDC903 /* LocalizableString.swift */; };
 		548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */; };
-		52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */; };
 		54C4595728077B57004DD3DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595628077B57004DD3DF /* LoadingView.swift */; };
 		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
@@ -37,6 +37,7 @@
 		A50AC3FC28089FEA00873216 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3FB28089FEA00873216 /* Pricing.swift */; };
 		A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4052808BEC000873216 /* PropertyImageView.swift */; };
 		A50AC4082808C25700873216 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC4072808C25700873216 /* ViewCodable.swift */; };
+		B034A06E2818447900884D27 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034A06D2818447900884D27 /* SettingsView.swift */; };
 		B0D7AA922805BBB7006177F8 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA912805BBB7006177F8 /* Favorites.swift */; };
 		B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */; };
 		B0D7AA972805F087006177F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7AA962805F087006177F8 /* TabBarViewController.swift */; };
@@ -58,13 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		54309170281094F900BDC903 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		543091722810A04500BDC903 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		543091742811D30E00BDC903 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		543091782811EB4100BDC903 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		5430917A2812203300BDC903 /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
-		52E289F928072CAC009030B3 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		54C4595628077B57004DD3DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		A50AC3FB28089FEA00873216 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
 		A50AC4052808BEC000873216 /* PropertyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImageView.swift; sourceTree = "<group>"; };
 		A50AC4072808C25700873216 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		B034A06D2818447900884D27 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B0D7AA912805BBB7006177F8 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAPIFavorites.swift; sourceTree = "<group>"; };
 		B0D7AA962805F087006177F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				980789CA275E8FAF00CED39A /* SettingsViewController.swift */,
+				B034A06D2818447900884D27 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B034A06E2818447900884D27 /* SettingsView.swift in Sources */,
 				543091752811D30F00BDC903 /* DesignSystem.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
