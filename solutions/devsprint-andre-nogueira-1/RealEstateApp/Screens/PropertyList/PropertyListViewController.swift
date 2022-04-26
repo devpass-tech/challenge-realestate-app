@@ -33,7 +33,6 @@ class PropertyListViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Real Estate App 🏡"
 
-        viewModel.fetchListProperty()
         self.addLoadingView(with: "Searching for listings...")
     }
 
@@ -42,10 +41,13 @@ class PropertyListViewController: UIViewController {
     }
     
     private func configureViewModel() {
-        viewModel.didFetch = { [weak self] result in
+        viewModel.fetchListProperty()
+        viewModel.propertyBind.bind = { result in
+            guard let result = result else { return }
+            
             DispatchQueue.main.async {
-                self?.propertyListView.updateView(with: result)
-                self?.removeLoadingView()
+                self.propertyListView.updateView(with: result)
+                self.removeLoadingView()
             }
         }
     }

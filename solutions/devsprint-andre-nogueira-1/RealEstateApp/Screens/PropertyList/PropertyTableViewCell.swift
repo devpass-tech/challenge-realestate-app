@@ -58,12 +58,6 @@ final class PropertyTableViewCell: UITableViewCell {
         return label
     }()
     
-    var property: Property? {
-        didSet {
-            setData()
-        }
-    }
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commomInit()
@@ -111,11 +105,7 @@ final class PropertyTableViewCell: UITableViewCell {
         ])
     }
     
-    private func setData() {
-        guard let property = property else {
-            return
-        }
-        
+    func setup(property: Property) {
         adDescriptionLabel.text = "R$ \(property.pricingInfos?.price ?? "")"
         condominium.text = "Condomínio R$ \(property.pricingInfos?.monthlyCondoFee ?? "") IPTU R$ \(property.pricingInfos?.yearlyIptu ?? "")"
         characteristics.text = "\(property.usableAreas ?? 0) m² \(property.bedrooms ?? 0) quartos \(property.bathrooms ?? 0) banheiros \(property.parkingSpaces ?? 0) vaga"

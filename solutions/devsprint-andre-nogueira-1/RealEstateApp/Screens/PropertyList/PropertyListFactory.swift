@@ -9,8 +9,9 @@ import Foundation
 
 struct PropertyListFactory {
     static func createPropertyList() -> PropertyListViewController {
-        let apiClient = RealEstateAPIClient()
-        let propertyList = PropertyListViewModel(apiClient: apiClient)
+        let managerUrl = ManagerGetURL()
+        let apiClientProperty = RealEstateAPIClientProperty(url: managerUrl)
+        let propertyList = PropertyListViewModel(apiClient: apiClientProperty)
         let viewController = PropertyListViewController(viewModel: propertyList)
         return viewController
     }

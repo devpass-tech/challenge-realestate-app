@@ -8,12 +8,12 @@
 import Foundation
 
 protocol PropertyListViewModelProtocol: AnyObject {
-    var didFetch: ([Property]) -> () { get set }
+    var propertyBind: Bindable<[Property]> { get set }
     func fetchListProperty()
 }
 
 final class PropertyListViewModel : PropertyListViewModelProtocol {
-    var didFetch: ([Property]) -> () = { _ in }
+    var propertyBind: Bindable<[Property]> = Bindable([])
     private let apiClient: RealEstateAPIPropertyProtocol
     
     init(apiClient: RealEstateAPIPropertyProtocol) {
@@ -24,7 +24,7 @@ final class PropertyListViewModel : PropertyListViewModelProtocol {
         apiClient.fetchProperties { [weak self] response in
             switch response {
             case .success(let result):
-                self?.didFetch(result)
+                self?.propertyBind.value = result
             case .failure(let err):
                 dump(err)
             }

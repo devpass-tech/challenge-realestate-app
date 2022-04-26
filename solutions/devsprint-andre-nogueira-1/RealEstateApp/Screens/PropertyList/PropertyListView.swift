@@ -63,7 +63,7 @@ extension PropertyListView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let propertyCell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }
         
-        propertyCell.property = listItems[indexPath.row]
+        propertyCell.setup(property: listItems[indexPath.row])
         
         return propertyCell
     }
