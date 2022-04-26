@@ -8,7 +8,6 @@
 import UIKit
 
 class ResultsVC: UIViewController {
- 
 
 }
 
@@ -27,13 +26,7 @@ class PropertyListViewController: UIViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Real Estate App "
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(handleButton))
-        searchController.searchResultsUpdater = self
-        navigationItem.searchController = searchController
-        
-        self.view.backgroundColor = .white
-
+        configureSetupView()
         fetchProperties()
     }
 
@@ -41,6 +34,14 @@ class PropertyListViewController: UIViewController, UISearchResultsUpdating {
         self.view = propertyListView
     }
     
+    func configureSetupView() {
+        navigationItem.title = "Real Estate App "
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(handleButton))
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Type a city or neighborhood "
+        navigationItem.searchController = searchController
+         self.view.backgroundColor = .white
+    }
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {
