@@ -22,22 +22,9 @@
 		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
 		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
-<<<<<<< Updated upstream
 		8B5548A728061AB400714870 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A628061AB400714870 /* LoginModel.swift */; };
 		8B5548A928061B8000714870 /* LoginAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A828061B8000714870 /* LoginAPIClient.swift */; };
 		8BD13BF3281868DF001756F4 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */; };
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-		8B5548A728061AB400714870 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A628061AB400714870 /* LoginModel.swift */; };
-		8B5548A928061B8000714870 /* LoginAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A828061B8000714870 /* LoginAPIClient.swift */; };
-		8BD13BF3281868DF001756F4 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */; };
-=======
-		8BD13BF528189CE6001756F4 /* PropertyDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD13BF428189CE6001756F4 /* PropertyDetailsFactory.swift */; };
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -93,22 +80,9 @@
 		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
 		8B5548A628061AB400714870 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		8B5548A828061B8000714870 /* LoginAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIClient.swift; sourceTree = "<group>"; };
 		8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-		8B5548A628061AB400714870 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		8B5548A828061B8000714870 /* LoginAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIClient.swift; sourceTree = "<group>"; };
-		8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
-=======
-		8BD13BF428189CE6001756F4 /* PropertyDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsFactory.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -261,7 +235,6 @@
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 				A50AC4052808BEC000873216 /* PropertyImageView.swift */,
 				548DA1EF280D2819000CFFAC /* PropertyDetailsView.swift */,
-				8BD13BF428189CE6001756F4 /* PropertyDetailsFactory.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -494,22 +467,7 @@
 				543091752811D30F00BDC903 /* DesignSystem.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				984DAACC27EE4A66002F3E8A /* PropertyListView.swift in Sources */,
-<<<<<<< HEAD
 				5498E3B72815B088002BD1C4 /* MapLocationView.swift in Sources */,
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-				5498E3B72815B088002BD1C4 /* MapLocationView.swift in Sources */,
-=======
-<<<<<<< Updated upstream
-=======
-				5498E3B72815B088002BD1C4 /* MapLocationView.swift in Sources */,
-				8BD13BF528189CE6001756F4 /* PropertyDetailsFactory.swift in Sources */,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> b5259ed (Cria PropertyDetailsFactory)
 				548DA1F0280D2819000CFFAC /* PropertyDetailsView.swift in Sources */,
 				52E289FA28072CAC009030B3 /* PropertyTableViewCell.swift in Sources */,
 				B0EDEDC0280643F100B1AB1F /* FavoritesViewModel.swift in Sources */,
