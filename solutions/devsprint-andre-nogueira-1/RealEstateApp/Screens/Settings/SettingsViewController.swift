@@ -11,7 +11,17 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .white
+        
+        setUpViewConfiguration()
     }
+    
+    override func loadView() {
+        self.view = SettingsView()
+        view.backgroundColor = .lightGray
+    }
+    
+    func setUpViewConfiguration(){
+        navigationController?.navigationItem.title = "Settings"
+    }
+    
 }

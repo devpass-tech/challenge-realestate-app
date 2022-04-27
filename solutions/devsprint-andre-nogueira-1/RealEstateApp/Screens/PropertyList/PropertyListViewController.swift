@@ -33,6 +33,10 @@ class PropertyListViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Real Estate App 🏡"
 
+        self.view.backgroundColor = .white
+
+        fetchProperties()
+        setButtonItem()
         self.addLoadingView(with: "Searching for listings...")
     }
 
@@ -50,6 +54,16 @@ class PropertyListViewController: UIViewController {
                 self.removeLoadingView()
             }
         }
+    }
+    
+    private func setButtonItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(openSettings))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .done, target: self, action: #selector(openSettings))
+        navigationItem.rightBarButtonItem?.isEnabled = true
+    }
+    
+    @objc private func openSettings() {
+        navigationController?.present(SettingsViewController(), animated: true)
     }
 }
 
