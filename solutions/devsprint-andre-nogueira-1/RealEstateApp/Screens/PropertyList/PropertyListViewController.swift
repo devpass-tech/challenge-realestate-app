@@ -9,9 +9,28 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
+<<<<<<< HEAD
     private let viewModel: PropertyListViewModelProtocol
     
     private let propertyListView: PropertyListView = {
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    private let viewModel: PropertyListViewModelProtocol
+
+    private let propertyListView: PropertyListView = {
+=======
+<<<<<<< Updated upstream
+=======
+    private let viewModel: PropertyListViewModelProtocol
+    private let 
+
+    private let propertyListView: PropertyListView = {
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> b5259ed (Cria PropertyDetailsFactory)
         let propertyListView = PropertyListView()
         return propertyListView
     }()

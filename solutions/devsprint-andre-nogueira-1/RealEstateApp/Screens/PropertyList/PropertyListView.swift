@@ -60,6 +60,7 @@ extension PropertyListView: UITableViewDataSource, UITableViewDelegate {
         return self.listItems.count
     }
 
+<<<<<<< HEAD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let propertyCell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }
         
@@ -70,5 +71,56 @@ extension PropertyListView: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+=======
+<<<<<<< Updated upstream
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier)!
+//        cell.textLabel?.text = self.listItems[indexPath.row]
+        return cell
+=======
+<<<<<<< Updated upstream
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let propertyCell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }
+        
+        propertyCell.setup(property: listItems[indexPath.row])
+        
+        return propertyCell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+=======
+<<<<<<< Updated upstream
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier)!
+//        cell.textLabel?.text = self.listItems[indexPath.row]
+        return cell
+=======
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let propertyCell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }
+        
+        propertyCell.setup(property: listItems[indexPath.row])
+        
+        return propertyCell
+    }
+}
+
+extension PropertyListView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let itens = listItems[indexPath.row]
+        let propertyDetailsFactory = PropertyDetailsFactory.createPropertyDetails()
+        
+        //TODO: - row do indexpath
+        //obter o item da listitems na posicao row
+        //chamar o factory da propertydetails e se nao tiver, criar
+        //no factory chamar metodo setup obtendo a viewcontroller
+        //em seguida fazer push nessa viewcontroller e passar o item da listitens para a prox view controller
+        //na proxima vc preencher a view com o resultado
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> b5259ed (Cria PropertyDetailsFactory)
     }
 }
