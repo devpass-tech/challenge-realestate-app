@@ -22,6 +22,9 @@
 		54C4595928077D03004DD3DF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */; };
 		54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204C82804EB8C009FFEDC /* AccountView.swift */; };
 		54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E204CA28051E0A009FFEDC /* AccountViewModel.swift */; };
+		8B5548A728061AB400714870 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A628061AB400714870 /* LoginModel.swift */; };
+		8B5548A928061B8000714870 /* LoginAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5548A828061B8000714870 /* LoginAPIClient.swift */; };
+		8BD13BF3281868DF001756F4 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */; };
 		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -78,6 +81,9 @@
 		54C4595828077D03004DD3DF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		54E204C82804EB8C009FFEDC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		54E204CA28051E0A009FFEDC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		8B5548A628061AB400714870 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8B5548A828061B8000714870 /* LoginAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIClient.swift; sourceTree = "<group>"; };
+		8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +149,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8BD13BF1281868C1001756F4 /* PropertyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				8BD13BF2281868DF001756F4 /* PropertyInfoView.swift */,
+			);
+			path = PropertyInfo;
+			sourceTree = "<group>";
+		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +200,7 @@
 			children = (
 				980C0C0A2704F1C700F8100A /* RealEstateAPIClientProperty.swift */,
 				B0D7AA932805BFA8006177F8 /* RealEstateAPIFavorites.swift */,
+				8B5548A828061B8000714870 /* LoginAPIClient.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8BD13BF1281868C1001756F4 /* PropertyInfo */,
 				54C4595528077B4B004DD3DF /* Utils */,
 				B0D7AA952805F05B006177F8 /* TabBar */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
@@ -242,6 +258,7 @@
 				A50AC3F928089F4900873216 /* Address.swift */,
 				A50AC3FB28089FEA00873216 /* Pricing.swift */,
 				B0D7AA912805BBB7006177F8 /* Favorites.swift */,
+				8B5548A628061AB400714870 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -470,17 +487,20 @@
 				543091792811EB4100BDC903 /* UIView+Extensions.swift in Sources */,
 				54309171281094F900BDC903 /* BaseView.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
+				8BD13BF3281868DF001756F4 /* PropertyInfoView.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				A50AC3FC28089FEA00873216 /* Pricing.swift in Sources */,
 				5498E3B52814DF14002BD1C4 /* PropertyListFactory.swift in Sources */,
 				54E204CB28051E0A009FFEDC /* AccountViewModel.swift in Sources */,
+				8B5548A728061AB400714870 /* LoginModel.swift in Sources */,
 				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
 				B0D7AA942805BFA8006177F8 /* RealEstateAPIFavorites.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				A50AC4062808BEC000873216 /* PropertyImageView.swift in Sources */,
 				E9FE07EC28076C6C00B2752F /* AccountFactory.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClientProperty.swift in Sources */,
+				8B5548A928061B8000714870 /* LoginAPIClient.swift in Sources */,
 				54E204C92804EB8C009FFEDC /* AccountView.swift in Sources */,
 				5446FD1128178A1200640269 /* Bindable.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,

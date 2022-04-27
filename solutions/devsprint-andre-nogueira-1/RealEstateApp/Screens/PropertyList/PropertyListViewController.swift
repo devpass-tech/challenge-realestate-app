@@ -10,7 +10,7 @@ import UIKit
 class PropertyListViewController: UIViewController {
 
     private let viewModel: PropertyListViewModelProtocol
-
+    
     private let propertyListView: PropertyListView = {
         let propertyListView = PropertyListView()
         return propertyListView
@@ -66,4 +66,3 @@ class PropertyListViewController: UIViewController {
         navigationController?.present(SettingsViewController(), animated: true)
     }
 }
-

@@ -8,6 +8,8 @@
 	<string>favorites.json</string>
 	<key>PropertyRequestEndPoint</key>
 	<string>listings.json</string>
+	<key>LoginRequestEndPoint</key>
+	<string>login.json</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

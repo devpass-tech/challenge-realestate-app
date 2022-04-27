@@ -9,6 +9,8 @@ import UIKit
 
 class PropertyDetailsViewController: UIViewController {
     
+    let propertyInfoView = PropertyInfoView()
+    
     private lazy var propertyDetailsView: PropertyDetailsView = {
         let view = PropertyDetailsView()
         view.sendContactButton.addTarget(self, action: #selector(sendContactForm), for: .touchUpInside)
