@@ -9,7 +9,7 @@ import Foundation
 
 struct ManagerGetURL {
     
-    public static func getFavoritesURL() -> String {
+    public func getFavoritesURL() -> String {
         
         let baseURL = InfoPlistBaseURL.getStringValue(forKey: "BaseURL")
         let favorites = InfoPlistBaseURL.getStringValue(forKey: "FavoritesRequestEndPoint")
@@ -18,7 +18,7 @@ struct ManagerGetURL {
         return urlString
     }
     
-    public static func getPropertiesURL() -> String {
+    public func getPropertiesURL() -> String {
         
         let baseURL = InfoPlistBaseURL.getStringValue(forKey: "BaseURL")
         let properties = InfoPlistBaseURL.getStringValue(forKey: "PropertyRequestEndPoint")

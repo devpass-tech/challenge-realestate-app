@@ -9,14 +9,24 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
-    let propertyListView: PropertyListView = {
+    private let viewModel: PropertyListViewModelProtocol
 
+    private let propertyListView: PropertyListView = {
         let propertyListView = PropertyListView()
         return propertyListView
     }()
 
-    let apiClient = RealEstateAPIClient()
-
+    init(viewModel: PropertyListViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+        
+        configureViewModel()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,16 +37,22 @@ class PropertyListViewController: UIViewController {
 
         fetchProperties()
         setButtonItem()
+        self.addLoadingView(with: "Searching for listings...")
     }
 
     override func loadView() {
         self.view = propertyListView
     }
-
-    func fetchProperties() {
-        apiClient.fetchProperties { [weak self] result in
-            guard let self = self else { return }
-            //passar os dados para a PropertyListView
+    
+    private func configureViewModel() {
+        viewModel.fetchListProperty()
+        viewModel.propertyBind.bind = { result in
+            guard let result = result else { return }
+            
+            DispatchQueue.main.async {
+                self.propertyListView.updateView(with: result)
+                self.removeLoadingView()
+            }
         }
     }
     

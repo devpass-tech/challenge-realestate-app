@@ -37,11 +37,12 @@ class PropertyDetailsViewController: UIViewController {
     }
     
     @objc private func keyboardWillShow(notification: NSNotification) {
-        let userInfo = notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
-        let keyboardSize = userInfo!.cgRectValue
-        
-        self.propertyDetailsView.scrollView.contentInset.bottom = keyboardSize.height - 40
-        self.propertyDetailsView.scrollView.scrollIndicatorInsets = self.propertyDetailsView.scrollView.contentInset
+        if let userInfo = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardSize = userInfo.cgRectValue
+            
+            self.propertyDetailsView.scrollView.contentInset.bottom = (keyboardSize.height) - 40
+            self.propertyDetailsView.scrollView.scrollIndicatorInsets = self.propertyDetailsView.scrollView.contentInset
+        }
     }
     
     @objc private func keyboardWillHide(notification: NSNotification) {

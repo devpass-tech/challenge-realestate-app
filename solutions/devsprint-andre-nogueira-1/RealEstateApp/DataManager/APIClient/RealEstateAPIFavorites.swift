@@ -12,12 +12,14 @@ protocol RealEstateAPIClientFavoritesProtocol: AnyObject {
 }
 
 class RealEstateAPIClientFavorites: RealEstateAPIClientFavoritesProtocol {
+    private let urlString: ManagerGetURL
+    
+    init(url: ManagerGetURL) {
+        urlString = url
+    }
     
     func fetchFavorites(completion: @escaping (Result<[Favorites], ErrorRequest>) -> (Void)) {
-        
-        let urlStrings = ManagerGetURL.getFavoritesURL()
-        
-        guard let url = URL(string: urlStrings) else {
+        guard let url = URL(string: urlString.getFavoritesURL()) else {
             completion(.failure(ErrorRequest.urlNotValid))
             return
         }

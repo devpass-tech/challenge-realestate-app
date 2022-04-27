@@ -7,50 +7,29 @@
 
 import UIKit
 
-struct ListViewConfiguration {
+final class PropertyListView: BaseView {
 
-    let listItems: [String]
-}
-
-final class PropertyListView: UIView {
-
-    private let listViewCellIdentifier = "ListViewCellIdentifier"
-
-    private var listItems: [String] = []
-
+    private var listItems: [Property] = []
+    
+    override func setupSubviews() {
+        self.configureSubviews()
+        self.configureSubviewsConstraints()
+    }
+    
     private lazy var tableView: UITableView = {
 
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(PropertyTableViewCell.self, forCellReuseIdentifier: PropertyTableViewCell.identifier)
         tableView.dataSource = self
+        tableView.delegate = self
         return tableView
     }()
-
-    init() {
-
-        super.init(frame: .zero)
-
-        self.setupViews()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 }
 
 private extension PropertyListView {
-
-    func setupViews() {
-
-        self.backgroundColor = .white
-
-        self.configureSubviews()
-        self.configureSubviewsConstraints()
-    }
-
+ 
     func configureSubviews() {
-
         self.addSubview(self.tableView)
     }
 
@@ -68,24 +47,28 @@ private extension PropertyListView {
 
 extension PropertyListView {
 
-    func updateView(with repositories: [String]) {
-
-        self.listItems = repositories
-        self.tableView.reloadData()
+    func updateView(with repositories: [Property]) {
+            self.listItems = repositories
+            self.tableView.reloadData()
     }
 }
 
-extension PropertyListView: UITableViewDataSource {
+extension PropertyListView: UITableViewDataSource, UITableViewDelegate {
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return self.listItems.count
     }
 
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let propertyCell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }
+        
+        propertyCell.setup(property: listItems[indexPath.row])
+        
+        return propertyCell
+    }
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.identifier)!
-//        cell.textLabel?.text = self.listItems[indexPath.row]
-        return cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

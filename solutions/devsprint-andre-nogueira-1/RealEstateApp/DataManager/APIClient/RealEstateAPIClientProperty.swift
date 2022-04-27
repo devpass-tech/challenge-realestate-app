@@ -11,10 +11,15 @@ protocol RealEstateAPIPropertyProtocol: AnyObject {
     func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void)
 }
 
-public final class RealEstateAPIClient {
+public final class RealEstateAPIClientProperty: RealEstateAPIPropertyProtocol {
+    private let urlString: ManagerGetURL
+    
+    init(url: ManagerGetURL) {
+        urlString = url
+    }
+    
     func fetchProperties(completion: @escaping (Result<[Property], ErrorRequest>) -> Void) {
-        let urlString = ManagerGetURL.getPropertiesURL()
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: urlString.getPropertiesURL()) else {
             completion(.failure(ErrorRequest.urlNotValid))
             return
         }
